@@ -98,13 +98,13 @@ export default function Pricing() {
                 ))}
               </ul>
               
-              <button className={`w-full py-3 rounded-xl font-semibold transition-all ${
+              {/* <button className={`w-full py-3 rounded-xl font-semibold transition-all ${
                 pkg.highlight 
                   ? 'bg-[var(--secondary)] text-white hover:bg-[#C2410C] shadow-lg shadow-orange-200' 
                   : 'bg-white border border-slate-200 text-[var(--primary)] hover:border-[var(--secondary)] hover:text-[var(--secondary)]'
               }`}>
                 Choose {pkg.name}
-              </button>
+              </button> */}
             </motion.div>
           ))}
         </div>

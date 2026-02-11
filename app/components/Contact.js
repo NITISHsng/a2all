@@ -62,7 +62,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="font-bold text-[var(--primary)] text-lg mb-2">Email Us</h4>
-                  <p className="text-[var(--text-light)]">singhanitish829@gmail.com</p>
+                  <p className="text-[var(--text-light)]">support@a2all.in</p>
                 </div>
               </motion.div>
 
