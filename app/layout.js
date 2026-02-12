@@ -2,6 +2,9 @@ import { Inter, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Link from "next/link";
+import SocialSidebar from "./components/SocialSidebar";
+import ConnectPopup from "./components/ConnectPopup";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -85,6 +88,8 @@ export default function RootLayout({ children }) {
     <html lang="en" className={`${inter.variable} ${robotoMono.variable}`}>
       <body className="antialiased font-sans">
         <Navbar />
+        <ConnectPopup />
+        <SocialSidebar />
         <main>{children}</main>
         <Footer />
       </body>

@@ -1,9 +1,10 @@
 'use client';
 
 import Link from 'next/link';
-import { Facebook, Instagram, Twitter, Linkedin } from 'lucide-react';
+import { Facebook, Instagram } from 'lucide-react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import WhatsAppIcon from './WhatsAppIcon';
 
 export default function Footer() {
   return (
@@ -20,7 +21,7 @@ export default function Footer() {
           <div className="col-span-1 md:col-span-2">
             <Link href="/" className="flex items-center gap-2 mb-4">
               <Image 
-                src="/a2alllogo.png" 
+                src="/a2alllogo2.png" 
                 alt="A2All Logo" 
                 width={140} 
                 height={50} 
@@ -31,10 +32,17 @@ export default function Footer() {
               Helping local businesses across India look professional and grow online with affordable, high-quality digital marketing packages.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="p-2 bg-slate-800 rounded-full hover:bg-[var(--secondary)] transition-colors"><Facebook size={20} /></a>
-              <a href="#" className="p-2 bg-slate-800 rounded-full hover:bg-[var(--secondary)] transition-colors"><Instagram size={20} /></a>
-              <a href="#" className="p-2 bg-slate-800 rounded-full hover:bg-[var(--secondary)] transition-colors"><Twitter size={20} /></a>
-              <a href="#" className="p-2 bg-slate-800 rounded-full hover:bg-[var(--secondary)] transition-colors"><Linkedin size={20} /></a>
+              <a href="https://www.facebook.com/share/17YKPdqW1u/" className="p-2 bg-slate-800 rounded-full hover:bg-[var(--secondary)] transition-colors"><Facebook size={20} /></a>
+              <a href="https://www.instagram.com/atwoall/" className="p-2 bg-slate-800 rounded-full hover:bg-[var(--secondary)] transition-colors"><Instagram size={20} /></a>
+      <a 
+  href="https://wa.me/918001338614?text=Hello%20A2ALL"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Chat on WhatsApp"
+  className="p-2 bg-slate-800 rounded-full hover:bg-[var(--secondary)] transition-colors"
+>
+  <WhatsAppIcon size={20} />
+</a>
             </div>
           </div>
 
