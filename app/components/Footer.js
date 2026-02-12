@@ -32,17 +32,36 @@ export default function Footer() {
               Helping local businesses across India look professional and grow online with affordable, high-quality digital marketing packages.
             </p>
             <div className="flex gap-4">
-              <a href="https://www.facebook.com/share/17YKPdqW1u/" className="p-2 bg-slate-800 rounded-full hover:bg-[var(--secondary)] transition-colors"><Facebook size={20} /></a>
-              <a href="https://www.instagram.com/atwoall/" className="p-2 bg-slate-800 rounded-full hover:bg-[var(--secondary)] transition-colors"><Instagram size={20} /></a>
-      <a 
-  href="https://wa.me/918001338614?text=Hello%20A2ALL"
-  target="_blank"
-  rel="noopener noreferrer"
-  aria-label="Chat on WhatsApp"
-  className="p-2 bg-slate-800 rounded-full hover:bg-[var(--secondary)] transition-colors"
->
-  <WhatsAppIcon size={20} />
-</a>
+            <a
+          href="https://www.facebook.com/share/17YKPdqW1u/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Facebook"
+          className="p-1 md:p-2 rounded-full bg-[#1877F2] text-white transition-all duration-300 transform hover:scale-110 shadow-lg"
+          onPointerDown={(e) => e.stopPropagation()} // Prevent drag when clicking link
+        >
+          <Facebook size={20} />
+        </a>
+                 <a
+          href="https://www.instagram.com/atwoall/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Instagram"
+          className="p-1 md:p-2 rounded-full bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] text-white transition-all duration-300 transform hover:scale-110 shadow-lg"
+          onPointerDown={(e) => e.stopPropagation()}
+        >
+          <Instagram size={20} />
+        </a>
+        <a
+          href="https://wa.me/918001338614?text=Hello%20A2ALL"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Chat on WhatsApp"
+          className="p-1 md:p-2 rounded-full bg-[#25D366] hover:text-white transition-all duration-300 transform hover:scale-110 shadow-lg"
+          onPointerDown={(e) => e.stopPropagation()}
+        >
+          <WhatsAppIcon size={20} />
+        </a>
             </div>
           </div>
 
